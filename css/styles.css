@@ -96,6 +96,14 @@ color: var(--accent-color);
 .header-item-contact+.header-item-contact{
     margin-left: 50px;
 }
+.icon-contact{
+    display: inline-block;
+    padding: 0;
+    margin-left: 0;
+    margin-right:10px;
+    outline: 1px solid red;
+    
+}
 .header-logo{
     margin-right: 93px;
     padding-top: 24px;
@@ -121,10 +129,12 @@ font-size: 14px;
 line-height: 1.33;
 letter-spacing: 0.02em;
 color: var(--title-color);
+fill: var(--title-color);
 }
 .header-item-contact-link:hover,
 .header-item-contact-link:focus{
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 /* ----Герой---- */
@@ -136,7 +146,7 @@ background-color: var(--background-color);
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image:  
+    background-image: url(../images/img-оverlay.png), 
     url(../images/img-hero.jpg);
     background-position: center;
 }
@@ -189,8 +199,19 @@ border: 1px solid transparent;
     width: 270px;
     margin-right: 30px;
 }
+
 .feature-item:nth-child(4n) {
     margin-right: 0;
+}
+.feature-item::before{
+    content: "";
+    display: block;
+    height: 120px;
+    background-size: 70px 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/antenna.svg);
+    
 }
 .feature-headline{
 font-size: 14px;
