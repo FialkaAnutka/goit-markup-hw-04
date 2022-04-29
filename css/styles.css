@@ -127,6 +127,8 @@ line-height: 1.33;
 letter-spacing: 0.02em;
 color: var(--title-color);
 fill: var(--title-color);
+display: flex;
+align-items: center;
 }
 .header-item-contact-link:hover,
 .header-item-contact-link:focus{
@@ -147,7 +149,6 @@ background-color: var(--background-color);
     url(../images/img-hero.jpg);
     background-position: center;
 }
-
 .hero-title{
 font-weight: 900;
 font-size: 44px;
@@ -394,9 +395,9 @@ color: rgba(255, 255, 255, 0.6);
 }
 .footer-box{
     display: flex;
+    align-items: baseline;
 }
 .footer-soc-box{
-    
     margin-left: 70px;
 }
 .footer-soc-headline{
